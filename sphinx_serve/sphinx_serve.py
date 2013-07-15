@@ -14,6 +14,7 @@ except ImportError:
 def cli():
     """Parse options from the command line"""
     parser = argparse.ArgumentParser(prog="sphinx-serve",
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                                      conflict_handler="resolve",
                                      description=__doc__
                                      )
